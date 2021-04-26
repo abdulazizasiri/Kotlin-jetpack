@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
 
     // Variables
 
-    printVars()  
+    printVars()
 
 }
 
