@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     // Variables
 
     printVars()
-
+    println(max(10,20))  // 
 }
 
 fun printVars() {
@@ -16,4 +16,8 @@ fun printVars() {
     println(age)
 
     println(pi)
+}
+
+fun max(a:Int , b:Int) : Int {
+    return if (a > b) a else b ;
 }
