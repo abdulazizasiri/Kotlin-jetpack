@@ -5,10 +5,10 @@ fun main(args: Array<String>) {
     // Variables
 
     printVars()
-    println(max(10,20))  // 
+    println(max(10,20))  //
 }
 
-fun printVars() {
+fun printVars() : Unit{
     var age  = 20  // Mutable
 
     val pi = 3.14 // Immutable
@@ -18,6 +18,8 @@ fun printVars() {
     println(pi)
 }
 
+
+// Example of a function in kotlin.
 fun max(a:Int , b:Int) : Int {
     return if (a > b) a else b ;
 }
