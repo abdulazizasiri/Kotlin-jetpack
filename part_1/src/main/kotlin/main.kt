@@ -14,16 +14,11 @@ fun printVars() : Unit{
     var age  = 20  // Mutable
 
     val pi = 3.14 // Immutable
-
-
-
+    
     println(pi)
     var number = 1
     var b = yn(number)
     println(b)
-
-    // if an dwhen
-
 }
 
 fun yn(a:Int) : String =
@@ -33,9 +28,8 @@ fun yn(a:Int) : String =
         else -> "None"   // Else is mandatory here because of the function signature
     }
 
-
 fun looping() {
-    var myList = listOf<String>("a", "a", "c")
+    var myList = listOf<String>("azizasiri", "aasiri", "aaasiri")
 
     for (i in myList) {
         println(i)
