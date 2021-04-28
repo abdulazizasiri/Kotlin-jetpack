@@ -1,3 +1,5 @@
+import kotlin.reflect.typeOf
+
 fun main(args: Array<String>) {
     val name = " Kotlin"
     println("Hello ${name}")  // String interpolations
@@ -28,6 +30,7 @@ fun yn(a:Int) : String =
         else -> "None"   // Else is mandatory here because of the function signature
     }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun looping() {
     var myList = listOf<String>("azizasiri", "aasiri", "aaasiri")
 
@@ -52,7 +55,12 @@ fun looping() {
     }
 
     for (ch in "abc") {
-        print(ch + 1)
+        println(ch + 1)
+    }
+
+    // In for checking: Same as python
+            if ("aasiri" in myList){
+        println("Found")
     }
 }
 
