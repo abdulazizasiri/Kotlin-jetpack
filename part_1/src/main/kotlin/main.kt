@@ -14,7 +14,7 @@ fun printVars() : Unit{
     var age  = 20  // Mutable
 
     val pi = 3.14 // Immutable
-    
+
     println(pi)
     var number = 1
     var b = yn(number)
@@ -34,6 +34,26 @@ fun looping() {
     for (i in myList) {
         println(i)
     }
+
+    // Iterating over a map
+
+    var map = mapOf(1 to "Aziz", 2 to "A", 3 to 1)
+
+    for ((key, value) in map)  {
+        println("key ${key} and value ${value}")
+
+    }
+    for (i in  1..9) {
+        println(i)
+    }
+
+    for (i in 1 until 10) {
+        println(i)
+    }
+
+    for (ch in "abc") {
+        print(ch + 1)
+    }
 }
 
 
@@ -45,3 +65,8 @@ fun max(a:Int , b:Int) : Int {
 
 
 fun one() = 1 // This is a simple expression for returning a one liner code in kotlin.
+
+
+// Iterating using a range including and excluding the last number
+
+
