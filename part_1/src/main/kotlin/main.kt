@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
     printVars()
     println(max(10,20))  //
     println(one())
+    looping()
 }
 
 fun printVars() : Unit{
@@ -31,6 +32,15 @@ fun yn(a:Int) : String =
         2 -> "No baby"
         else -> "None"   // Else is mandatory here because of the function signature
     }
+
+
+fun looping() {
+    var myList = listOf<String>("a", "a", "c")
+
+    for (i in myList) {
+        println(i)
+    }
+}
 
 
 
